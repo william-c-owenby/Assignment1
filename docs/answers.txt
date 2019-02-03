@@ -1,7 +1,7 @@
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *        File:	docs/answers.txt				      *
 * Description:	Text file containing the answers to the questions     *
-*		posed in Section 3E.				      *
+*		posed in Section 3E and 5.			      *
 *								      *
 *      Author:	William Owenby (wco17)				      *
 *       Class:	CEN 4020.0003					      *
@@ -83,3 +83,10 @@ by having a single integration manager responsible for merging the work
 of 100 developers. It makes much more sense to distribute the task
 amongst multiple lieutenants who then push to a director, and thus avoid
 said bottleneck altogether.
+
+5.
+The RoleGame prototype is using both polymorphism and encapsulation.
+Polymorphism is being used when defining (or, technically, redefining)
+each weapon's hit method. Encapsulation is being used in each weapon's
+hit method as well. This encapsulation is the bundling of the hit method
+with its damage variable that it modifies before returning.
