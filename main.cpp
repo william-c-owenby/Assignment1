@@ -25,9 +25,6 @@ void simulateWeapon(Weapon * weapon, double armor) {
     cout << weapon->getName() << " inflicts " << weapon->hit(armor) << " when armor is " << armor << std::endl << std::endl;
 }
 
-/*
- *
- */
 int main(int argc, char** argv) {
     // Initialize random seed
     srand(time(NULL));
@@ -50,10 +47,10 @@ int main(int argc, char** argv) {
     weapon = WeaponFactory::getInstance()->getWeapon("crazy sword");
     simulateWeapon(weapon, armor);
     delete(weapon);
-/*
-    weapon = WeaponFactory::getInstance()->getWeapon("spear");
+
+    weapon = WeaponFactory::getInstance()->getWeapon("long sword");
     simulateWeapon(weapon, armor);
     delete(weapon);
-*/
+
     return 0;
 }
