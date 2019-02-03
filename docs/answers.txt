@@ -1,0 +1,92 @@
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*        File:	docs/answers.txt				      *
+* Description:	Text file containing the answers to the questions     *
+*		posed in Section 3E and 5.			      *
+*								      *
+*      Author:	William Owenby (wco17)				      *
+*       Class:	CEN 4020.0003					      *
+*  Project #1:	Git and Object Oriented Programming Warm-Up	      *
+*         Due:	02/03/2019					      *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+3.
+E.
+a.
+Enumerating objects: 11, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 845 bytes | 281.00 KiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/william-c-owenby/Assignment1.git
+   3d373c9..b2da02f  master -> master
+
+b.
+5 commits
+git log --oneline
+
+c.
+Thu Jan 10 16:45:38 2019 -0500
+git log .gitignore
+
+d.
+I.
+To allow for a stable, master branch as well as an unstable, development
+branch
+II.
+To provide better support for developers working in parallel
+
+e.
+I.
+Git log shows all commits in the current branch's history
+II.
+Git status shows all modified files in your working directory, staged
+for your next commit
+
+f.
+git log --follow Weapon.h
+
+g.
+git log --grep=file
+
+h.
+I.
+Inheritance is the basing of a class or an object on another class or
+object and having the 'child' class or object retain the properties and
+behaviors of it's 'parent.'
+II.
+Polymorphism is the ability to redefine classes' inherited methods.
+III.
+Encapsulation is the bundling of data with the methods that operate on
+said data.
+
+i.
+In short, the Integration Manager workflow utilizes centralized
+integration and the Director and Lieutenants workflow utilized
+distributed integration. In the Integration Manager workflow, all of the
+integration conflict resolution is done by a singular integration
+manager who then pushes changes to the blessed repository; whereas, in
+the Dictator and Lieutenants workflow, each lieutenant merges changes
+for his/her developers and resolves any arising integration conflicts
+before pushing the changes to the dictator's repository who, in turn,
+resolves any arising integration conflicts from all of the lieutenants'
+pushes before pushing to the blessed repository.
+
+j.
+A team of 100 developers would benefit more by following the Dictator
+and lieutenants workflow because resolving the integration conflicts
+that inevitably arise when merging the work of multiple developers is no
+easy task and difficulty of this task increase a greater than linear
+rate. So, it does not make sense to bottleneck a project's development
+by having a single integration manager responsible for merging the work
+of 100 developers. It makes much more sense to distribute the task
+amongst multiple lieutenants who then push to a director, and thus avoid
+said bottleneck altogether.
+
+5.
+The RoleGame prototype is using both polymorphism and encapsulation.
+Polymorphism is being used when defining (or, technically, redefining)
+each weapon's hit method. Encapsulation is being used in each weapon's
+hit method as well. This encapsulation is the bundling of the hit method
+with its damage variable that it modifies before returning.
