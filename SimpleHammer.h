@@ -22,7 +22,7 @@
 class SimpleHammer : public Weapon {
 public:
 
-    // Calls Weapon(name, hitpoints) constructor with values Simple hammer and 25.0
+    // Calls Weapon(name, hitPoints) constructor with values Simple hammer and 25.0
     SimpleHammer() : Weapon("Simple hammer", 25.0) {}
 
     virtual ~SimpleHammer() {};
@@ -32,4 +32,3 @@ public:
 };
 
 #endif /* SIMPLEHAMMER_H */
-

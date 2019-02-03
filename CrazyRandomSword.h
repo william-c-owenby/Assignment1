@@ -22,7 +22,7 @@
  */
 class CrazyRandomSword : public Weapon {
 public:
-    // Calls Weapon(name, hitPoints) constructor with values Crazy sword and rand() % 93 + 7
+    // Calls Weapon(name, hitPoints) constructor with values Crazy random sword and rand() % 93 + 7
     CrazyRandomSword() : Weapon("Crazy random sword", rand() % 93 + 7) {}
 
     virtual ~CrazyRandomSword() {};
@@ -32,4 +32,3 @@ public:
 };
 
 #endif /* CRAZYRANDOMSWORD_H */
-

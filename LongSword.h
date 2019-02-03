@@ -21,7 +21,7 @@
  */
 class LongSword : public Weapon {
 public:
-    // Calls Weapon(name, hitPoints) constructor with values Long sword and 55.0
+    // Calls Weapon(name, hitPoints) constructor with values Long sword and 60.0
     LongSword() : Weapon("Long sword", 60.0) {}
 
     virtual ~LongSword() {};
